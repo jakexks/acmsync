@@ -12,3 +12,10 @@ Provide ambient credentials (e.g. `AWS_ACCESS_KEY_ID`, `AWS_REGION`, `AWS_SECRET
 to the controller.
 
 Run the controller.
+
+```shell
+go install sandbox.jakexks.dev/acmsync@latest
+export AWS_ACCESS_KEY_ID=...
+kind create cluster
+acmsync -zap-devel -zap-log-level=10
+```
